@@ -1,4 +1,5 @@
 import qrcode
+import getpass
 
 def qrLink():
     text = input("Enter link or text: ")
@@ -28,13 +29,12 @@ def contact():
     
 def wifi():
     ssid = input("wifi name: ")
-    psw = input("WiFi password: ")
+    psw = getpass.getpass("Inserisci la password: ")
     
     wifi = "WIFI:T:WPA;s: " + ssid
     wifi = wifi + ";p:" + psw + ";;"
     
     img = qrcode.make(wifi)
-    print(wifi)
     img.save("wifi_qr.png")
     print("saved")
     
