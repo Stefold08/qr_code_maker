@@ -2,7 +2,7 @@ import qrcode
 
 def qrLink():
     text = input("Enter link or text: ")
-    file = input("File name")
+    file = input("File name: ")
     img = qrcode.make(text)
     img.save(file + ".png")
     print("saved ", file + ".png")
@@ -34,6 +34,7 @@ def wifi():
     wifi = wifi + ";p:" + psw + ";;"
     
     img = qrcode.make(wifi)
+    print(wifi)
     img.save("wifi_qr.png")
     print("saved")
     
@@ -67,7 +68,7 @@ while True:
         print("see you next time!")
         break
     else: 
-        print("Wrong choice!")
+        print("Wrong imput type, try again!")
         
         
         
