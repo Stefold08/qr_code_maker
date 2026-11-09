@@ -1,7 +1,10 @@
 import qrcode
 
 while True:
+<<<<<<< HEAD
     #menu di base
+=======
+>>>>>>> refs/remotes/origin/main
     print("\n ---QR CODE MAKER----")
     print("1. link or text")
     print("2. contact card")
@@ -9,7 +12,10 @@ while True:
     print("0. exit")
     choice = input("choose: ")
     
+<<<<<<< HEAD
     #prima funzione di creazione di qr code
+=======
+>>>>>>> refs/remotes/origin/main
     if choice == "1":
         text = input("Enter link or text: ")
         file = input("File name: ")
@@ -17,7 +23,10 @@ while True:
         img.save(file + ".png")
         print("saved ", file + ".png")
         
+<<<<<<< HEAD
     #seconda funzione di creazione del contatto
+=======
+>>>>>>> refs/remotes/origin/main
     elif choice == "2":
         first = input("enter firstname: ")
         last = input("enter lastname: ")
@@ -37,7 +46,10 @@ while True:
         img.save("contact_qr.png")
         print("saved: contact_qr.png")
         
+<<<<<<< HEAD
     #terza funzione per creare il qr code di un wifi
+=======
+>>>>>>> refs/remotes/origin/main
     elif choice == "3":
         ssid = input("wifi name: ")
         psw = input("WiFi password: ")
@@ -48,8 +60,12 @@ while True:
         img = qrcode.make(wifi)
         img.save("wifi_qr.png")
         print("saved")
+<<<<<<< HEAD
     
     #uscita
+=======
+        
+>>>>>>> refs/remotes/origin/main
     elif choice == "0":
         print("bye bye")
         break
